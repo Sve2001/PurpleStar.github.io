@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art: Purple Star</title>
+        
+    <link rel = "stylesheet" href = "Portafolio_CSS/Portafolio_SvetlanaCanoSens_PixelArt.css">
+    <script src = "Portafolio_JS/Portafolio_SvetlanaCanoSens.js"></script>
+    
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Unna&display=swap" rel = "stylesheet">
+
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class = "contenedorMenuPixelArt fixedPixelArt">
+        <a href = "index.html"><img src = "Portafolio_Imagenes/logo.png" alt = "logo"></a>
+
+        <ul>
+            <li><a href = "index.html">Inicio</a></li>
+            <li><a href = "Portafolio_SvetlanaCanoSens_Trabajo.html">Trabajo</a></li>
+            <li><a href = "Portafolio_SvetlanaCanoSens_AcercaDeMi.html">Acerca de Mi</a></li>
+        </ul>
+    </div>
+
+    <div class = "tituloPixelArt">
+        <h4>Pixel Art</h4>
+    </div>
+    
+    <div class = "contenedorImagenes">
+        <p>Primeros Pixel Art, los originales vienen de esta artisa <a href = "https://twitter.com/nimasain" target = "_blank">@nimasain</a>.</p>
+        
+        <ul>
+            <img src="Portafolio_Imagenes/1_Trigo.png" onclick = "abirVentanaEmergentePixelArt('Portafolio_Imagenes/1_Trigo.png', 'Nombre: Trigo, Fan Art')" alt = "pixelArt1" class = "amplearImagen">
+            <img src="Portafolio_Imagenes/2_Flor_Azul.png" onclick = "abirVentanaEmergentePixelArt('Portafolio_Imagenes/2_Flor_Azul.png', 'Nombre: Flor Azul, Fan Art')" alt = "pixelArt2" class = "amplearImagen">
+            <img src="Portafolio_Imagenes/3_Vegetales.png" onclick = "abirVentanaEmergentePixelArt('Portafolio_Imagenes/3_Vegetales.png', 'Nombre: Alimento, Fan Art')" alt = "pixelArt3" class = "amplearImagen">
+        </ul>
+    </div>
+
+    <div class = "ventanaEmergentePixelArt" id = "imagenEnVentanaEmergentePixelArt" onclick = "cerrarVentanaEmergentePixelArt()"">
+        <button onclick = "cerrarVentanaEmergentePixelArt()">X</button>
+        
+        <img src = "Portafolio_Imagenes/yo oso 2.jpg" alt = "imagen1" id = "imagenEnMuestraPixelAr" class = "tamanio">
+        
+        <p id = "textoEnMuestraPixelAr"></p>
+    </div>
+
+    <div class = "contenedorContacto">
+        <img src = "Portafolio_Imagenes/Autorretrato.jpg" alt = "Autoretrato">
+
+        <ul>
+            <h3>Contacto</h3>
+
+            <p>Si te interesa conocer más sobre mi trabajo visita mis redes:</p>
+        
+            <a href = "https://www.instagram.com/purpple_staar/" target = "_blank"><img src = "Portafolio_Imagenes/instagram.png" alt = "instagram"></a>
+
+            <a href = "https://www.artstation.com/inicio" target="_blank"><img src = "Portafolio_Imagenes/artstation.png" alt = "artstation"></a>.
+        </ul>
+    </div>
+</body>
+</html>

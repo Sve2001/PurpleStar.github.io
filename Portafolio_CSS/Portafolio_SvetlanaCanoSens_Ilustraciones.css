@@ -1,0 +1,518 @@
+/* <(TnT)> */
+/*Cuerpo*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'League Spartan', sans-serif;
+    background: #EAD1F2;
+}
+/*Cuerpo*/
+
+/*Menu de Inicio*/
+.contenedorMenuIlustracion {
+    background: #B188D2;
+    margin: 0;
+    padding: 2px;
+    justify-content: center;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    border-radius: 0 5px;
+}
+
+.contenedorMenuIlustracion img {
+    width: 10%;
+}
+
+.contenedorMenuIlustracion ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 1px;
+    padding: 2px;
+}
+
+.contenedorMenuIlustracion li {
+    margin-right: 20px;
+}
+
+.contenedorMenuIlustracion li a {
+    color: #8733B5;
+    text-decoration: none;
+    text-align: center;
+    font-size: 25px;
+    margin: 0;
+    padding: 2px;
+}
+
+.contenedorMenuIlustracion li a:hover {
+    font-weight: bolder;
+}
+
+.fixedIlustracion {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+}
+/*Menu de Inicio*/
+
+/*Titulo Ilustraciones*/
+.tituloIlustracion {
+    align-items: center;
+    justify-content: center;
+    margin-top: 7%;
+}
+
+.tituloIlustracion h4 {
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: #8733B5;
+    font-size: 30px;
+}
+/*Titulo Ilustraciones*/
+
+/*Galeria*/
+.contenedorImagenes {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedorImagenes p {
+    text-align: justify;
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedorImagenes ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    margin: 0;
+    padding: 9px 9px;
+    grid-gap: 9px;
+    overflow: hidden;
+}
+
+.contenedorImagenes img {
+    background: white;
+    justify-content: center;
+    vertical-align: top;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.amplearImagen {
+    transition: transform 0.2s ease-in-out;
+}
+
+.amplearImagen:hover {
+    transform: scale(1.1);
+}
+/*Galeria*/
+
+/*Ventana Emergente*/
+.contenedorVentanaEmergenteIlustracion {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+    text-align: center;
+}
+
+.contenedorVentanaEmergenteIlustracion button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #8733B5;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.contenedorVentanaEmergenteIlustracion img {
+    background: white;
+    display: block;
+    max-width: 30%;
+    max-height: 30%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.contenedorVentanaEmergenteIlustracion p {
+    color: #B188D2;
+    margin-top: 20px;
+    font-size: 20px;
+}
+/*Ventana Emergente*/
+
+/*Contacto*/
+.contenedorContacto {
+    background: #B188D2;
+    justify-content: space-between;
+    display: -webkit-box;
+    display: -webkit-flex;
+    border-radius: 5px;
+}
+
+.contenedorContacto img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.contenedorContacto ul {
+    list-style: none;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.contenedorContacto h3 {
+    text-align: center;
+    padding: 1px;
+    font-weight: bolder;
+    font-size: 35px;
+    color: #8733B5;
+    padding: 2px;
+}
+
+.contenedorContacto p {
+    text-align: justify;
+    font-size: 25px;
+    margin: 0;
+}
+
+.contenedorContacto a img {
+    background: white;
+    align-items: center;
+    margin: 0 0 0 25%;
+    width: 10%;
+}
+/*Contacto*/
+
+/*Parte Responsivo*/
+@media (max-width: 767px) {
+    /*Menu de Inicio*/
+    .contenedorMenuIlustracion {
+        justify-content: center;
+        flex-flow: column wrap;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .contenedorMenuIlustracion ul {
+        width: 120%;
+        justify-content: center;
+        padding: 1px;
+    }
+
+    .contenedorMenuIlustracion img {
+        display: none;
+    }
+
+    .contenedorMenuIlustracion li a {
+        text-align: center;
+        padding: 0;
+        font-size: 20px;
+    }
+    /*Menu de Inicio*/
+
+    /*Titulo Ilustraciones*/
+    .tituloIlustracion {
+        top: 60%;
+    }
+    /*Titulo Ilustraciones*/
+
+    /*Galeria*/
+    .contenedorImagenes p {
+        text-align: justify;
+        font-size: 20px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .contenedorImagenes ul {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+    /*Galeria*/
+
+    /*Contacto*/
+    .contenedorContacto {
+        flex-flow: column wrap;
+        padding: 0;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contenedorContacto img {
+        width: 90%;
+        padding: 0;
+        margin: 5px;
+    }
+
+    .contenedorContacto ul {
+        margin: 4px 4px;
+        padding: 4px 4px;
+    }
+
+    .contenedorContacto h3 {
+        font-size: 25px;
+        margin: 0;
+        padding: 1px;
+    }
+
+    .contenedorContacto p {
+        font-size: 20px;
+    }
+
+    .contenedorContacto a img {
+        align-items: center;
+        margin: 0 0 0 5%;
+        width: 10%;
+    }
+    /*Contacto*/
+}
+
+@media (max-width: 991px) {
+    /*Menu de Inicio*/
+    .contenedorMenuIlustracion {
+        justify-content: center;
+        flex-flow: column wrap;
+        margin: 0;
+        padding: 10px;
+    }
+
+    .contenedorMenuIlustracion ul {
+        text-align: center;
+        width: 90%;
+        padding: 1px;
+    }
+
+    .contenedorMenuIlustracion img {
+        display: none;
+    }
+
+    .contenedorMenuIlustracion li a {
+        text-align: center;
+        padding: 0;
+        font-size: 20px;
+    }
+    /*Menu de Inicio*/
+
+    /*Titulo Ilustraciones*/
+    .tituloIlustracion {
+        top: 60%;
+    }
+    /*Titulo Ilustraciones*/
+
+    /*Galeria*/
+    .contenedorImagenes p {
+        text-align: justify;
+        font-size: 20px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .contenedorImagenes ul {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+    /*Galeria*/
+
+    /*Contacto*/
+    .contenedorContacto img {
+        width: 50%;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .contenedorContacto ul {
+        margin: 15px;
+        padding: 30px;
+    }
+
+    .contenedorContacto h3 {
+        text-align: center;
+        padding: 1px;
+        font-weight: bolder;
+        font-size: 25px;
+        color: #8733B5;
+        padding: 2px;
+    }
+
+    .contenedorContacto p {
+        text-align: justify;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .contenedorContacto a img {
+        align-items: center;
+        margin: 0 0 0 5%;
+        width: 10%;
+    }
+    /*Contacto*/
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    /*Menu de Inicio*/
+    .contenedorMenuIlustracion {
+        margin: 0;
+        padding: 5px;
+        justify-content: center;
+        border-radius: 0 5px;
+    }
+    
+    .contenedorMenuIlustracion ul {
+        justify-content: center;
+        width: 100%;
+        margin: 1px;
+        padding: 2px;
+    }
+    
+    .contenedorMenuIlustracion li {
+        margin-right: 20px;
+    }
+    
+    .contenedorMenuIlustracion li a {
+        font-size: 25px;
+        margin: 0;
+        padding: 2px;
+    }
+    /*Menu de Inicio*/
+
+    /*Titulo Ilustraciones*/
+    .tituloIlustracion {
+        top: 60%;
+    }
+    /*Titulo Ilustraciones*/
+
+    /*Galeria*/
+    .contenedorImagenes p {
+        text-align: justify;
+        font-size: 20px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .contenedorImagenes ul {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+    /*Galeria*/
+
+    /*Contacto*/
+    .contenedorContacto img {
+        width: 50%;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .contenedorContacto ul {
+        margin: 15px;
+        padding: 25px;
+    }
+
+    .contenedorContacto h3 {
+        font-size: 25;
+        padding: 2px;
+    }
+
+    .contenedorContacto a img {
+        align-items: center;
+        margin: 0 0 0 5%;
+        width: 10%;
+    }
+    /*Contacto*/
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+    /*Menu de Inicio*/
+    .contenedorMenuIlustracion {
+        margin: 0;
+        padding: 5px;
+        justify-content: center;
+        border-radius: 0 5px;
+    }
+
+    .contenedorMenuIlustracion img a {
+        margin: 5px;
+        padding: 5px;
+    }
+    
+    .contenedorMenuIlustracion ul {
+        justify-content: center;
+        margin: 1px;
+        padding: 2px;
+    }
+    
+    .contenedorMenuIlustracion li {
+        margin-right: 20px;
+    }
+    /*Menu de Inicio*/
+
+    /*Titulo Ilustraciones*/
+    .tituloIlustracion {
+        top: 60%;
+    }
+    /*Titulo Ilustraciones*/
+
+    /*Galeria*/
+    .contenedorImagenes p {
+        text-align: justify;
+        font-size: 20px;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .contenedorImagenes ul {
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+    /*Galeria*/
+
+    /*Contacto*/
+    .contenedorContacto img {
+        width: 50%;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    .contenedorContacto ul {
+        margin: 15px;
+        padding: 25px;
+    }
+
+    .contenedorContacto h3 {
+        font-size: 30;
+        padding: 2px;
+    }
+
+    .contenedorContacto a img {
+        align-items: center;
+        margin: 0 0 0 5%;
+        width: 10%;
+    }
+    /*Contacto*/
+}
+/*Parte Responsivo */

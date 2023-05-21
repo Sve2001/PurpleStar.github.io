@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilustraciones: Purple Star</title>
+
+    <link rel = "stylesheet" href = "Portafolio_CSS/Portafolio_SvetlanaCanoSens_Ilustraciones.css">
+    <script src = "Portafolio_JS/Portafolio_SvetlanaCanoSens.js"></script>
+    
+    <link rel = "preconnect" href = "https://fonts.googleapis.com">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+    <link href = "https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Unna&display=swap" rel = "stylesheet">
+
+    <meta name = "viewport" content = "width=device-width, initial-scale=1">
+</head>
+<body>
+    <div class = "contenedorMenuIlustracion fixedIlustracion">
+        <a href = "index.html"><img src = "Portafolio_Imagenes/logo.png" alt = "logo"></a>
+
+        <ul>
+            <li><a href = "index.html">Inicio</a></li>
+            <li><a href = "Portafolio_SvetlanaCanoSens_Trabajo.html">Trabajo</a></li>
+            <li><a href = "Portafolio_SvetlanaCanoSens_AcercaDeMi.html">Acerca de Mi</a></li>
+        </ul>
+    </div>
+
+    <div class = "tituloIlustracion">
+        <h4>Mis Ilustraciónes</h4>
+    </div>
+
+    <div class = "contenedorImagenes">
+        <p>Mis Ilustraciones más completas, muchas de ellas son Fan Arts y otras son creaciones propias.</p>
+
+        <ul>
+            <img src = "Portafolio_Imagenes/Afrodita_recorte.jpg" alt = "imagen1" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/Afrodita_recorte.jpg', 'Nombre: Afrodita, FanArt')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/beso.jpg" alt = "imagen2" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/beso.jpg', 'Nombre: Beso, FanArt')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/Perséfone Diosa.jpg" alt = "imagen3" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/Perséfone Diosa.jpg', 'Nombre: Kore, FanArt')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/Perséfone.jpg" alt = "imagen4" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/Perséfone.jpg', 'Nombre: Perséfone, FanArt')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/Rose Cuarzo.jpg" alt = "imagen5" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/Rose Cuarzo.jpg', 'Nombre: Rose Cuarzo, FanArt')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/yo_2.jpg" alt = "imagen6" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/yo_2.jpg', 'Nombre: Purpur, Creación propia')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/Autorretrato.jpg" alt = "imagen7" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/Autorretrato.jpg', 'Nombre: Autorretrato, Creación propia')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/Yo_Oso.jpg" alt = "imagen8" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/Yo_Oso.jpg', 'Nombre: Osa Polar 1, Creación Propia')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/yo oso 2.jpg" alt = "imagen9" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/yo oso 2.jpg', 'Nombre: Osa Polar 2, Creación Propia')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/Coquito.jpg" alt = "imagen10" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/Coquito.jpg', 'Nombre: Coco Corazón, Creación propia')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/Panel.jpg" alt = "imagen11" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/Panel.jpg', 'Nombre: Panel de Manga, FanArt')" class = "amplearImagen">
+            <img src = "Portafolio_Imagenes/Boba_1.png" alt = "imagen12" onclick = "abirVentanaEmergenteIlustraciones('Portafolio_Imagenes/Boba_1.png', 'Nombre: Logo de marca, Creación Propia')" class = "amplearImagen">
+        </ul>
+    </div>
+
+    <div class = "contenedorVentanaEmergenteIlustracion" id = "imagenEnVentanaEmergente" onclick = "cerrarVentanaEmergenteIlustraciones()">
+        <ul>
+            <button onclick = "cerrarVentanaEmergenteIlustraciones()">X</button>
+
+            <img src = "Portafolio_Imagenes/yo oso 2.jpg" alt = "imagen1" id = "imagenEnMuestra" class = "tamanio">
+
+            <p id = "textoEnMuestra"></p>
+        </ul>
+    </div>
+    
+    <div class = "contenedorContacto">
+        <img src = "Portafolio_Imagenes/Autorretrato.jpg" alt = "Autoretrato">
+
+        <ul>
+            <h3>Contacto</h3>
+
+            <p>Si te interesa conocer más sobre mi trabajo visita mis redes:</p>
+        
+            <a href = "https://www.instagram.com/purpple_staar/" target = "_blank"><img src = "Portafolio_Imagenes/instagram.png" alt = "instagram"></a>
+
+            <a href = "https://www.artstation.com/inicio" target="_blank"><img src = "Portafolio_Imagenes/artstation.png" alt = "artstation"></a>.
+        </ul>
+    </div>
+</body>
+</html>
